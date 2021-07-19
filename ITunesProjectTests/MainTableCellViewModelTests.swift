@@ -26,8 +26,8 @@ class MainTableCellViewModelTests: XCTestCase {
     func testComputationalProperties() {
         XCTAssertEqual(mainTableCellViewModel.artistName, "testName")
         XCTAssertEqual(mainTableCellViewModel.trackName, "testTrackName")
-        XCTAssertEqual(mainTableCellViewModel.trackPrice, "$5.0")
-        XCTAssertEqual(mainTableCellViewModel.releaseDate, "2021-07-09")
+        XCTAssertEqual(mainTableCellViewModel.trackPrice, "Price: $5.0")
+        XCTAssertEqual(mainTableCellViewModel.releaseDate, "Release Date: 2021-07-09")
         XCTAssertEqual(mainTableCellViewModel.primaryGenreName, "Genre: Music")
         XCTAssertEqual(mainTableCellViewModel.imageUrl, "https://is2-ssl.mzstatic.com/image/thumb/Video125/v4/37/d7/b3/37d7b32d-90d2-762b-33bf-1b3cbe5b5690/source/100x100bb.jpg")
     }
