@@ -22,5 +22,7 @@ https://itunes.apple.com/search?term={any ArtistName}
 [Main Screen]
 <div>You can search iTunes artist by iTunes artist name</div>
 <p align="center">
- <img src = "https://github.com/Ghostlun/ItunesProject_Submission/blob/master/ITunesProject/Resource/GithubResource/screen.gif" width = 200 height = 410/>
-  <img src = "https://github.com/Ghostlun/ItunesProject_Submission/blob/master/ITunesProject/Resource/GithubResource/screenPicture.png" width = 200 height = 410/>
+ <img src = "https://github.com/Ghostlun/Itunes_Project_Submission/blob/master/ITunesProject/Resources/GithubResource/screenGif.gif" width = 200 height = 410/>
+  <img src = "https://github.com/Ghostlun/Itunes_Project_Submission/blob/master/ITunesProject/Resources/GithubResource/screen1.png" width = 200 height = 410/>
+  <img src = "https://github.com/Ghostlun/Itunes_Project_Submission/blob/master/ITunesProject/Resources/GithubResource/screen2.png" width = 200 height = 410/>
+  <img src = "https://github.com/Ghostlun/Itunes_Project_Submission/blob/master/ITunesProject/Resources/GithubResource/screen3.png" width = 200 height = 410/>
