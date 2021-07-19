@@ -25,8 +25,9 @@ class MainViewController: UIViewController {
         }
     }
     
+    lazy var mainListViewModel = MainViewModel(delegate: self)
     
-    // MARK: - viewDidload
+    // MARK: - view Didload
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicatorView.center = self.view.center
@@ -35,15 +36,40 @@ class MainViewController: UIViewController {
     // MARK: - @IBAction searchArtist
     @IBAction private func searchArtist() {
         guard let artistName = artistNameTextField.text else { return }
+        mainListViewModel.searchInformation(with: artistName)
     }
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        mainListViewModel.numberOfRowsInSection()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      return UITableViewCell()
+        let data = mainListViewModel.iTunesData(at: indexPath.row)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.reuseIdentifier, for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
+        cell.configure(data: data)
+        return cell
+    }
+}
+
+extension MainViewController: MainViewModelProtocol {
+    
+    func showLoader() {
+        self.activityIndicatorView.startAnimating()
+        self.activityIndicatorView.isHidden = false
+    }
+    
+    func hideLoader() {
+        self.activityIndicatorView.stopAnimating()
+        self.activityIndicatorView.isHidden = true
+    }
+    
+    func reloadData() {
+        self.tableView?.reloadData()
+    }
+    
+    func didFailWith(error: AppError) {
+//       Show Errors
     }
 }

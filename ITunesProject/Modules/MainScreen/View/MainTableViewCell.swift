@@ -9,15 +9,19 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell, CellReusable {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet private weak var artistName: UILabel!
+    @IBOutlet private weak var trackName: UILabel!
+    @IBOutlet private weak var trackPrice: UILabel!
+    @IBOutlet private weak var releaseDate: UILabel!
+    @IBOutlet private weak var primaryGenreName: UILabel!
+    @IBOutlet private weak var artistImage: UIImageView!
     
+    func configure(data: MainTableCellViewModel) {
+        artistName.text = data.artistName
+        trackName.text = data.trackName
+        trackPrice.text = "\(data.trackPrice))"
+        releaseDate.text = data.releaseDate
+        primaryGenreName.text = data.primaryGenreName
+        artistImage.downloadImage(with: data.imageUrl)
+    }
 }
