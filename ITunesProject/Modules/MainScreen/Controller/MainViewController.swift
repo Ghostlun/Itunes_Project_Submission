@@ -15,7 +15,9 @@ class MainViewController: UIViewController {
         didSet {
             self.tableView.delegate = self
             self.tableView.dataSource = self
-            self.tableView.register(UINib(nibName: MainTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: MainTableViewCell.reuseIdentifier)}
+            self.tableView.register(UINib(nibName: MainTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: MainTableViewCell.reuseIdentifier)
+            self.tableView.tableFooterView = UIView()
+        }
     }
     
     @IBOutlet private weak var artistNameTextField: UITextField!
@@ -35,7 +37,7 @@ class MainViewController: UIViewController {
     
     // MARK: - @IBAction searchArtist
     @IBAction private func searchArtist() {
-        guard let artistName = artistNameTextField.text else { return }
+        guard let artistName = artistNameTextField.text?.stringRemovingWhitespaces, !artistName.isEmpty else { return }
         mainListViewModel.searchInformation(with: artistName)
     }
 }
@@ -49,7 +51,15 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         let data = mainListViewModel.iTunesData(at: indexPath.row)
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.reuseIdentifier, for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
         cell.configure(data: data)
+        cell.index = indexPath.row
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if mainListViewModel.numberOfRowsInSection() == 0 {
+            return "No Results"
+        }
+        return nil
     }
 }
 
@@ -57,12 +67,10 @@ extension MainViewController: MainViewModelProtocol {
     
     func showLoader() {
         self.activityIndicatorView.startAnimating()
-        self.activityIndicatorView.isHidden = false
     }
     
     func hideLoader() {
         self.activityIndicatorView.stopAnimating()
-        self.activityIndicatorView.isHidden = true
     }
     
     func reloadData() {

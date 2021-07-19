@@ -15,6 +15,15 @@ class MainTableViewCell: UITableViewCell, CellReusable {
     @IBOutlet private weak var releaseDate: UILabel!
     @IBOutlet private weak var primaryGenreName: UILabel!
     @IBOutlet private weak var artistImage: UIImageView!
+    var index = 0 {
+        didSet {
+            if index % 2 == 0 {
+                self.contentView.backgroundColor = .systemGroupedBackground
+            } else {
+                self.contentView.backgroundColor = .white
+            }
+        }
+    }
     
     func configure(data: MainTableCellViewModel) {
         artistName.text = data.artistName

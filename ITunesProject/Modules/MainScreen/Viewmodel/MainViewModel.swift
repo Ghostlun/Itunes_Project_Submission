@@ -33,10 +33,9 @@ class MainViewModel {
         MainTableCellViewModel(info: artistInformationDataSource[index])
     }
     
-    func searchInformation(with artist: String) {
-        let searchInformation = artist.stringRemovingWhitespaces
+    func searchInformation(with searchText: String) {
         self.delegate?.showLoader()
-        NetworkManager.manager.fetch(url: "https://itunes.apple.com/search?term=\(searchInformation)") { [weak self] (result: Result<ITunesData, AppError>) in
+        NetworkManager.manager.fetch(url: "https://itunes.apple.com/search?term=\(searchText)") { [weak self] (result: Result<ITunesData, AppError>) in
             self?.delegate?.hideLoader()
             guard let self = self else { return }
             switch result {
@@ -49,6 +48,4 @@ class MainViewModel {
             }
         }
     }
-    
-    
 }

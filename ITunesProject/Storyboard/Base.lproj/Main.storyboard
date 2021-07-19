@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Itunes Artist List-->
+        <!--iTunes Artist Data-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="ITunesProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-aW-hDD">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search for an Artist Name here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-aW-hDD">
                                 <rect key="frame" x="8" y="96" width="293" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" smartDashesType="no" smartInsertDeleteType="no"/>
@@ -52,7 +52,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GLM-8Q-anL" secondAttribute="trailing" id="xcs-3S-UZl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Itunes Artist List" id="SZp-up-ree"/>
+                    <navigationItem key="navigationItem" title="iTunes Artist Data" id="SZp-up-ree"/>
                     <connections>
                         <outlet property="activityIndicatorView" destination="jHu-RX-tsk" id="tSF-dB-8sc"/>
                         <outlet property="artistNameTextField" destination="TLi-aW-hDD" id="qio-M5-bVn"/>
