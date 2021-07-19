@@ -12,7 +12,6 @@
 		D94E046426A5E8B10094D869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94E046226A5E8B10094D869 /* Main.storyboard */; };
 		D94E046626A5E8B30094D869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94E046526A5E8B30094D869 /* Assets.xcassets */; };
 		D94E046926A5E8B30094D869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94E046726A5E8B30094D869 /* LaunchScreen.storyboard */; };
-		D94E047426A5E8B30094D869 /* MainTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E047326A5E8B30094D869 /* MainTableCellViewModelTests.swift */; };
 		D94E049526A5EB8F0094D869 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E049426A5EB8F0094D869 /* MainViewController.swift */; };
 		D94E049926A5EC3A0094D869 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E049726A5EC3A0094D869 /* MainTableViewCell.swift */; };
 		D94E049A26A5EC3A0094D869 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D94E049826A5EC3A0094D869 /* MainTableViewCell.xib */; };
@@ -25,10 +24,13 @@
 		D94E04AA26A5ED090094D869 /* ITunesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04A926A5ED090094D869 /* ITunesData.swift */; };
 		D94E04AD26A5ED360094D869 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04AC26A5ED360094D869 /* NetworkManager.swift */; };
 		D94E04AF26A5EE530094D869 /* MainTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04AE26A5EE530094D869 /* MainTableViewCellViewModel.swift */; };
+		D94E04C226A5FBF60094D869 /* ITunesProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04C126A5FBF60094D869 /* ITunesProjectTests.swift */; };
+		D94E04CB26A5FC280094D869 /* MainViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04CA26A5FC280094D869 /* MainViewModelDelegate.swift */; };
+		D94E04CD26A5FC580094D869 /* MainTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04CC26A5FC580094D869 /* MainTableCellViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D94E047026A5E8B30094D869 /* PBXContainerItemProxy */ = {
+		D94E04C426A5FBF60094D869 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D94E045126A5E8B10094D869 /* Project object */;
 			proxyType = 1;
@@ -45,9 +47,6 @@
 		D94E046526A5E8B30094D869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D94E046826A5E8B30094D869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94E046A26A5E8B30094D869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D94E046F26A5E8B30094D869 /* ITunesProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITunesProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D94E047326A5E8B30094D869 /* MainTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCellViewModelTests.swift; sourceTree = "<group>"; };
-		D94E047526A5E8B30094D869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94E049426A5EB8F0094D869 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D94E049726A5EC3A0094D869 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		D94E049826A5EC3A0094D869 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
@@ -60,6 +59,11 @@
 		D94E04A926A5ED090094D869 /* ITunesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesData.swift; sourceTree = "<group>"; };
 		D94E04AC26A5ED360094D869 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D94E04AE26A5EE530094D869 /* MainTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		D94E04BF26A5FBF60094D869 /* ITunesProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITunesProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94E04C126A5FBF60094D869 /* ITunesProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesProjectTests.swift; sourceTree = "<group>"; };
+		D94E04C326A5FBF60094D869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D94E04CA26A5FC280094D869 /* MainViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelDelegate.swift; sourceTree = "<group>"; };
+		D94E04CC26A5FC580094D869 /* MainTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCellViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +74,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D94E046C26A5E8B30094D869 /* Frameworks */ = {
+		D94E04BC26A5FBF60094D869 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D94E045B26A5E8B10094D869 /* ITunesProject */,
-				D94E047226A5E8B30094D869 /* ITunesProjectTests */,
+				D94E04C026A5FBF60094D869 /* ITunesProjectTests */,
 				D94E045A26A5E8B10094D869 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D94E045926A5E8B10094D869 /* ITunesProject.app */,
-				D94E046F26A5E8B30094D869 /* ITunesProjectTests.xctest */,
+				D94E04BF26A5FBF60094D869 /* ITunesProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,15 +111,6 @@
 				D94E048C26A5E8BD0094D869 /* Common */,
 			);
 			path = ITunesProject;
-			sourceTree = "<group>";
-		};
-		D94E047226A5E8B30094D869 /* ITunesProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				D94E047326A5E8B30094D869 /* MainTableCellViewModelTests.swift */,
-				D94E047526A5E8B30094D869 /* Info.plist */,
-			);
-			path = ITunesProjectTests;
 			sourceTree = "<group>";
 		};
 		D94E048C26A5E8BD0094D869 /* Common */ = {
@@ -228,6 +223,25 @@
 			path = "Network Layer";
 			sourceTree = "<group>";
 		};
+		D94E04C026A5FBF60094D869 /* ITunesProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				D94E04C926A5FC120094D869 /* MockClass */,
+				D94E04C126A5FBF60094D869 /* ITunesProjectTests.swift */,
+				D94E04C326A5FBF60094D869 /* Info.plist */,
+				D94E04CC26A5FC580094D869 /* MainTableCellViewModelTests.swift */,
+			);
+			path = ITunesProjectTests;
+			sourceTree = "<group>";
+		};
+		D94E04C926A5FC120094D869 /* MockClass */ = {
+			isa = PBXGroup;
+			children = (
+				D94E04CA26A5FC280094D869 /* MainViewModelDelegate.swift */,
+			);
+			path = MockClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,22 +262,22 @@
 			productReference = D94E045926A5E8B10094D869 /* ITunesProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D94E046E26A5E8B30094D869 /* ITunesProjectTests */ = {
+		D94E04BE26A5FBF60094D869 /* ITunesProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D94E048626A5E8B30094D869 /* Build configuration list for PBXNativeTarget "ITunesProjectTests" */;
+			buildConfigurationList = D94E04C626A5FBF60094D869 /* Build configuration list for PBXNativeTarget "ITunesProjectTests" */;
 			buildPhases = (
-				D94E046B26A5E8B30094D869 /* Sources */,
-				D94E046C26A5E8B30094D869 /* Frameworks */,
-				D94E046D26A5E8B30094D869 /* Resources */,
+				D94E04BB26A5FBF60094D869 /* Sources */,
+				D94E04BC26A5FBF60094D869 /* Frameworks */,
+				D94E04BD26A5FBF60094D869 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D94E047126A5E8B30094D869 /* PBXTargetDependency */,
+				D94E04C526A5FBF60094D869 /* PBXTargetDependency */,
 			);
 			name = ITunesProjectTests;
 			productName = ITunesProjectTests;
-			productReference = D94E046F26A5E8B30094D869 /* ITunesProjectTests.xctest */;
+			productReference = D94E04BF26A5FBF60094D869 /* ITunesProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +292,7 @@
 					D94E045826A5E8B10094D869 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					D94E046E26A5E8B30094D869 = {
+					D94E04BE26A5FBF60094D869 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = D94E045826A5E8B10094D869;
 					};
@@ -298,7 +312,7 @@
 			projectRoot = "";
 			targets = (
 				D94E045826A5E8B10094D869 /* ITunesProject */,
-				D94E046E26A5E8B30094D869 /* ITunesProjectTests */,
+				D94E04BE26A5FBF60094D869 /* ITunesProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -315,7 +329,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D94E046D26A5E8B30094D869 /* Resources */ = {
+		D94E04BD26A5FBF60094D869 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94E04CB26A5FC280094D869 /* MainViewModelDelegate.swift in Sources */,
 				D94E04AD26A5ED360094D869 /* NetworkManager.swift in Sources */,
 				D94E04AA26A5ED090094D869 /* ITunesData.swift in Sources */,
 				D94E049526A5EB8F0094D869 /* MainViewController.swift in Sources */,
@@ -345,21 +360,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D94E046B26A5E8B30094D869 /* Sources */ = {
+		D94E04BB26A5FBF60094D869 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94E047426A5E8B30094D869 /* MainTableCellViewModelTests.swift in Sources */,
+				D94E04CD26A5FC580094D869 /* MainTableCellViewModelTests.swift in Sources */,
+				D94E04C226A5FBF60094D869 /* ITunesProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D94E047126A5E8B30094D869 /* PBXTargetDependency */ = {
+		D94E04C526A5FBF60094D869 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D94E045826A5E8B10094D869 /* ITunesProject */;
-			targetProxy = D94E047026A5E8B30094D869 /* PBXContainerItemProxy */;
+			targetProxy = D94E04C426A5FBF60094D869 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -537,15 +553,13 @@
 			};
 			name = Release;
 		};
-		D94E048726A5E8B30094D869 /* Debug */ = {
+		D94E04C726A5FBF60094D869 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8DZ32VLKR;
 				INFOPLIST_FILE = ITunesProjectTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,15 +573,13 @@
 			};
 			name = Debug;
 		};
-		D94E048826A5E8B30094D869 /* Release */ = {
+		D94E04C826A5FBF60094D869 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8DZ32VLKR;
 				INFOPLIST_FILE = ITunesProjectTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,11 +614,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D94E048626A5E8B30094D869 /* Build configuration list for PBXNativeTarget "ITunesProjectTests" */ = {
+		D94E04C626A5FBF60094D869 /* Build configuration list for PBXNativeTarget "ITunesProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D94E048726A5E8B30094D869 /* Debug */,
-				D94E048826A5E8B30094D869 /* Release */,
+				D94E04C726A5FBF60094D869 /* Debug */,
+				D94E04C826A5FBF60094D869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

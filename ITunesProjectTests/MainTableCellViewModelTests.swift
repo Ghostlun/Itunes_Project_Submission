@@ -5,8 +5,8 @@
 //  Created by Yoonha Kim on 7/19/21.
 //
 
-import XCTest
 @testable import ITunesProject
+import XCTest
 
 class MainTableCellViewModelTests: XCTestCase {
     
