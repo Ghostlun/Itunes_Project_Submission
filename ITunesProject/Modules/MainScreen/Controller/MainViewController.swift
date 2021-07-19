@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
     
     lazy var mainListViewModel = MainViewModel(delegate: self)
     
-    // MARK: - view Didload
+    // MARK: - view did load
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicatorView.center = self.view.center

@@ -8,7 +8,7 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell, CellReusable {
-
+    
     @IBOutlet private weak var artistName: UILabel!
     @IBOutlet private weak var trackName: UILabel!
     @IBOutlet private weak var trackPrice: UILabel!
@@ -19,7 +19,7 @@ class MainTableViewCell: UITableViewCell, CellReusable {
     func configure(data: MainTableCellViewModel) {
         artistName.text = data.artistName
         trackName.text = data.trackName
-        trackPrice.text = "\(data.trackPrice))"
+        trackPrice.text = data.trackPrice
         releaseDate.text = data.releaseDate
         primaryGenreName.text = data.primaryGenreName
         artistImage.downloadImage(with: data.imageUrl)
