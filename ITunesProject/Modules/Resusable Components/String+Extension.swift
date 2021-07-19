@@ -13,13 +13,6 @@ extension String {
         components(separatedBy: .whitespaces).joined()
     }
     
-    func getSubString(fromIndex: Int, toIndex: Int) -> String {
-        let start = self.index(self.startIndex, offsetBy: fromIndex)
-        let end = self.index(self.startIndex, offsetBy: toIndex)
-        let range = start...end
-        return String(self[range])
-    }
-    
     func dateFormatter() -> String {
         let start = self.index(self.startIndex, offsetBy: 0)
         let end = self.index(self.startIndex, offsetBy: 9)
