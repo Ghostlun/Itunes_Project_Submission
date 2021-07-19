@@ -16,10 +16,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rx-m5-S1S">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artistName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rx-m5-S1S">
                         <rect key="frame" x="116" y="8" width="196" height="21"/>
-                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TmS-7G-gHd">
@@ -29,52 +29,48 @@
                             <constraint firstAttribute="width" constant="100" id="tUw-m8-zfT"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9J-Sg-XHb">
-                        <rect key="frame" x="116" y="37" width="196" height="18.5"/>
-                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrackPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9J-Sg-XHb">
+                        <rect key="frame" x="8" y="132" width="72" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgx-tv-6PF">
-                        <rect key="frame" x="116" y="63.5" width="180" height="18.5"/>
-                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="8" y="88" width="91" height="18"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7h-T3-gLV">
-                        <rect key="frame" x="8" y="92" width="304" height="18.5"/>
-                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7h-T3-gLV">
+                        <rect key="frame" x="116" y="41" width="196" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqv-tg-lz8">
-                        <rect key="frame" x="8" y="118.5" width="304" height="18.5"/>
-                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqv-tg-lz8">
+                        <rect key="frame" x="8" y="110" width="42" height="18"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="x7h-T3-gLV" firstAttribute="top" secondItem="TmS-7G-gHd" secondAttribute="bottom" constant="8" id="4J2-zf-GVs"/>
-                    <constraint firstItem="iqv-tg-lz8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="8kc-6T-d4a"/>
+                    <constraint firstAttribute="trailing" secondItem="x7h-T3-gLV" secondAttribute="trailing" constant="8" id="451-Ff-vH3"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="k9J-Sg-XHb" secondAttribute="bottom" constant="8" id="94d-da-FTh"/>
                     <constraint firstItem="8rx-m5-S1S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9pR-0S-Ar8"/>
+                    <constraint firstItem="iqv-tg-lz8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Bnp-JQ-DHB"/>
+                    <constraint firstItem="tgx-tv-6PF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="C9J-78-OGg"/>
+                    <constraint firstItem="x7h-T3-gLV" firstAttribute="top" secondItem="8rx-m5-S1S" secondAttribute="bottom" constant="12" id="Cen-yg-VGU"/>
                     <constraint firstAttribute="trailing" secondItem="8rx-m5-S1S" secondAttribute="trailing" constant="8" id="HCJ-71-wHc"/>
-                    <constraint firstItem="k9J-Sg-XHb" firstAttribute="leading" secondItem="TmS-7G-gHd" secondAttribute="trailing" constant="8" id="JiV-rg-tzF"/>
-                    <constraint firstAttribute="trailing" secondItem="k9J-Sg-XHb" secondAttribute="trailing" constant="8" id="Rx7-ET-Bwl"/>
-                    <constraint firstItem="x7h-T3-gLV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="XSM-eQ-787"/>
+                    <constraint firstItem="tgx-tv-6PF" firstAttribute="top" secondItem="TmS-7G-gHd" secondAttribute="bottom" constant="4" id="PYq-K7-Osx"/>
+                    <constraint firstItem="iqv-tg-lz8" firstAttribute="top" secondItem="tgx-tv-6PF" secondAttribute="bottom" constant="4" id="Yhx-1X-dtT"/>
                     <constraint firstItem="TmS-7G-gHd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Yut-bc-z6P"/>
-                    <constraint firstItem="iqv-tg-lz8" firstAttribute="top" secondItem="x7h-T3-gLV" secondAttribute="bottom" constant="8" id="a6e-vy-JUn"/>
-                    <constraint firstAttribute="trailing" secondItem="iqv-tg-lz8" secondAttribute="trailing" constant="8" id="du5-G8-D2k"/>
+                    <constraint firstItem="k9J-Sg-XHb" firstAttribute="top" secondItem="iqv-tg-lz8" secondAttribute="bottom" constant="4" id="blE-6A-W4s"/>
                     <constraint firstItem="TmS-7G-gHd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="eZM-jb-zak"/>
-                    <constraint firstAttribute="trailing" secondItem="x7h-T3-gLV" secondAttribute="trailing" constant="8" id="mxA-T0-gxG"/>
-                    <constraint firstItem="tgx-tv-6PF" firstAttribute="leading" secondItem="TmS-7G-gHd" secondAttribute="trailing" constant="8" id="ooA-4L-fRl"/>
                     <constraint firstItem="8rx-m5-S1S" firstAttribute="leading" secondItem="TmS-7G-gHd" secondAttribute="trailing" constant="8" id="pwJ-P2-yYN"/>
-                    <constraint firstItem="k9J-Sg-XHb" firstAttribute="top" secondItem="8rx-m5-S1S" secondAttribute="bottom" constant="8" id="qZf-p7-nmj"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iqv-tg-lz8" secondAttribute="bottom" constant="8" id="rRZ-bL-JGw"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="tgx-tv-6PF" secondAttribute="trailing" constant="8" id="so2-3h-fgt"/>
-                    <constraint firstItem="tgx-tv-6PF" firstAttribute="top" secondItem="k9J-Sg-XHb" secondAttribute="bottom" constant="8" id="uxf-GN-i3D"/>
-                    <constraint firstItem="k9J-Sg-XHb" firstAttribute="top" secondItem="8rx-m5-S1S" secondAttribute="bottom" constant="8" id="vg5-VR-sph"/>
-                    <constraint firstItem="k9J-Sg-XHb" firstAttribute="centerY" secondItem="TmS-7G-gHd" secondAttribute="centerY" id="vjF-Tw-im2"/>
+                    <constraint firstItem="k9J-Sg-XHb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="smB-tQ-rD6"/>
+                    <constraint firstItem="x7h-T3-gLV" firstAttribute="leading" secondItem="TmS-7G-gHd" secondAttribute="trailing" constant="8" id="vJr-8W-qSA"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

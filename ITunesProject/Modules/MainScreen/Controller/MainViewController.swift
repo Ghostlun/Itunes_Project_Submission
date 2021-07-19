@@ -70,6 +70,8 @@ extension MainViewController: MainViewModelProtocol {
     }
     
     func didFailWith(error: AppError) {
-//       Show Errors
+        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
 }

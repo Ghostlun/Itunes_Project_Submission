@@ -35,11 +35,11 @@ class MainTableCellViewModel: MainTableCellViewModelProtocol {
     }
     
     var releaseDate: String {
-        (information.releaseDate ?? "").getSubString(fromIndex: 0, toIndex: 9)
+        "Release Date: \((information.releaseDate ?? "").dateFormatter())"
     }
     
     var trackPrice: String {
-        "$\(information.trackPrice ?? 0)"
+        "Price: $\(information.trackPrice ?? 0)"
     }
     
     var primaryGenreName: String {
