@@ -1,5 +1,7 @@
-# ITunesProject_Submission
-ItunesProject_Submission
+# iTunes Project Submission
+iTunes Project Submission
+
+<h4> Yoonha Kim </h4>
 
 <h4>App Information </h4>
 It is a ItunesProject using iTunes Api
