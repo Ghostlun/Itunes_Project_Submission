@@ -27,6 +27,10 @@
 		D94E04C226A5FBF60094D869 /* ITunesProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04C126A5FBF60094D869 /* ITunesProjectTests.swift */; };
 		D94E04CB26A5FC280094D869 /* MainViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04CA26A5FC280094D869 /* MainViewModelDelegate.swift */; };
 		D94E04CD26A5FC580094D869 /* MainTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E04CC26A5FC580094D869 /* MainTableCellViewModelTests.swift */; };
+		D94E04D326A634630094D869 /* screen1.png in Resources */ = {isa = PBXBuildFile; fileRef = D94E04CF26A634620094D869 /* screen1.png */; };
+		D94E04D426A634630094D869 /* screen2.png in Resources */ = {isa = PBXBuildFile; fileRef = D94E04D026A634620094D869 /* screen2.png */; };
+		D94E04D526A634630094D869 /* screen3.png in Resources */ = {isa = PBXBuildFile; fileRef = D94E04D126A634620094D869 /* screen3.png */; };
+		D94E04D626A634630094D869 /* screenGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = D94E04D226A634620094D869 /* screenGif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		D94E04C326A5FBF60094D869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94E04CA26A5FC280094D869 /* MainViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelDelegate.swift; sourceTree = "<group>"; };
 		D94E04CC26A5FC580094D869 /* MainTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCellViewModelTests.swift; sourceTree = "<group>"; };
+		D94E04CF26A634620094D869 /* screen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1.png; sourceTree = "<group>"; };
+		D94E04D026A634620094D869 /* screen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2.png; sourceTree = "<group>"; };
+		D94E04D126A634620094D869 /* screen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen3.png; sourceTree = "<group>"; };
+		D94E04D226A634620094D869 /* screenGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenGif.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 		D94E048E26A5E8C60094D869 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D94E04CE26A634550094D869 /* GithubResource */,
 				D94E046526A5E8B30094D869 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -242,6 +251,17 @@
 			path = MockClass;
 			sourceTree = "<group>";
 		};
+		D94E04CE26A634550094D869 /* GithubResource */ = {
+			isa = PBXGroup;
+			children = (
+				D94E04CF26A634620094D869 /* screen1.png */,
+				D94E04D026A634620094D869 /* screen2.png */,
+				D94E04D126A634620094D869 /* screen3.png */,
+				D94E04D226A634620094D869 /* screenGif.gif */,
+			);
+			path = GithubResource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,10 +342,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94E04D526A634630094D869 /* screen3.png in Resources */,
 				D94E046926A5E8B30094D869 /* LaunchScreen.storyboard in Resources */,
 				D94E046626A5E8B30094D869 /* Assets.xcassets in Resources */,
 				D94E049A26A5EC3A0094D869 /* MainTableViewCell.xib in Resources */,
+				D94E04D326A634630094D869 /* screen1.png in Resources */,
+				D94E04D426A634630094D869 /* screen2.png in Resources */,
 				D94E046426A5E8B10094D869 /* Main.storyboard in Resources */,
+				D94E04D626A634630094D869 /* screenGif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
