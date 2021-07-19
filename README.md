@@ -1,5 +1,5 @@
 # iTunes Project Submission
-iTunes Project Submission
+This project allows users to search iTunes artist information
 
 <h4> Yoonha Kim </h4>
 
